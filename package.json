@@ -1,0 +1,59 @@
+{
+  "name": "ebay-sniper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "dependencies": {
+    "@timberio/node": "^0.35.0",
+    "@timberio/winston": "^0.35.0",
+    "@types/express": "^4.17.7",
+    "@types/mongoose": "^5.7.34",
+    "@types/murmurhash": "0.0.1",
+    "@types/node-telegram-bot-api": "^0.50.2",
+    "@types/pixelmatch": "^5.2.1",
+    "@types/puppeteer": "^3.0.1",
+    "@types/selenium-webdriver": "^4.0.9",
+    "@types/user-agents": "^1.0.0",
+    "@types/validator": "^13.1.0",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "form-data": "^3.0.0",
+    "jimp": "^0.14.0",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.27",
+    "murmurhash": "^1.0.0",
+    "node-telegram-bot-api": "^0.50.0",
+    "opencv-wasm": "^4.3.0-4",
+    "pixelmatch": "^5.2.1",
+    "puppeteer": "^5.2.1",
+    "puppeteer-extra": "^3.1.13",
+    "puppeteer-extra-plugin-stealth": "^2.4.14",
+    "query-string": "^6.13.1",
+    "systeminformation": "^4.26.10",
+    "typescript": "^3.9.7",
+    "validator": "^13.1.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "tsc-watch": "^4.2.9"
+  },
+  "scripts": {
+    "start": "tsc && node ./dist/index.js",
+    "start:prod": "tsc && pm2 start node ./dist/index.js",
+    "start:dev": "./node_modules/.bin/tsc-watch --onSuccess \"node ./dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noxend/ebay-sniper.git"
+  },
+  "author": "noxend",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noxend/ebay-sniper/issues"
+  },
+  "homepage": "https://github.com/noxend/ebay-sniper#readme"
+}
